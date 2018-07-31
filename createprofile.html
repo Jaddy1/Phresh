@@ -1,0 +1,69 @@
+<head>
+        <!--FIREBASE-->
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDv2GYirztQDGBB_u0L2ScGBl6aTB8UyA4",
+    authDomain: "phresh-37a6b.firebaseapp.com",
+    databaseURL: "https://phresh-37a6b.firebaseio.com",
+    projectId: "phresh-37a6b",
+    storageBucket: "phresh-37a6b.appspot.com",
+    messagingSenderId: "134748980253"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <!--FONT-->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Gaegu');
+    </style>
+    <Title>Create Profile</Title>
+    <!--MATERIALIZE INITIAITON-->
+    <link rel="stylesheet" href="createprofile.css" type="text/css" />
+    <!-- Compiled and minified CSS -->
+
+</head>
+
+<body>
+    <div id='nav'>
+      <a href='index.html'><img id='logo' src="images/Phresh-2.png"></img></a>
+    </div>
+    <div id='sideNav'>
+      <div id='name'>
+        <h1>Name</h1>
+      </div>
+      <div id="profilebutton">
+        <a href='createprofile.html'><h1>Profile</h1></a>
+      </div>
+      <div id="listingsbutton">
+        <a href='createlisting.html'><h1>Create Listing</h1></a>
+      </div>
+      <div id='viewListing'>
+        <a href='viewlisting.html'><h1>View Listings</h1></a>
+      </div>
+    </div>
+    <div class='main'>
+      <div id='displaypic1'>
+      <button id='displaypic'><img id='displaypic2' src="images/profileicon.png" /></button>
+      </div>
+      <div id='form'>
+      <form>
+        Name: <input type="text" id="name"/><br>
+        Dorm: <input type="text" id='dorm'></input><br>
+        Description: <input type="text" id='descrip'></input><br>
+        Phone Number: <input type='phoneNumber'></input><br>
+        <input type="submit" value="Save" id='save'/>
+      </form>
+      </div>
+      
+      
+      
+    </div>
+  <!--scripts-->
+      <script src="firebase.js"></script>
+      <!--<script src="parallex.js"></script>-->
+      <script type="text/javascript" src="createprofile.js"></script>
+      <script type="text/javascript" src="firebase.js"></script>
+    <!--<script type="text/javascript" src="script.js"></script>-->
+</body>
