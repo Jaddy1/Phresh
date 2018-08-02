@@ -19,51 +19,55 @@
         @import url('https://fonts.googleapis.com/css?family=Gaegu');
     </style>
     <Title>Create Profile</Title>
-    <!--MATERIALIZE INITIAITON-->
     <link rel="stylesheet" href="createprofile.css" type="text/css" />
-    <!-- Compiled and minified CSS -->
 
 </head>
 
 <body>
-    <div id='nav'>
-      <a href='index.html'><img id='logo' src="images/Phresh-2.png"></img></a>
-    </div>
     <div id='sideNav'>
-      <div id='name'>
-        <h1>Name</h1>
+      <div id='home'>
+        <a href='index.html'><img id='logo' src="images/Phresh-2.png"></img></a>
       </div>
-      <div id="profilebutton">
-        <a href='createprofile.html'><h1>Profile</h1></a>
+      <div id='navigation'>
+        <div id='name'>
+        </div>
+        <div id="profilebutton">
+          <a href='createprofile.html'><h2>Profile</h2></a>
+        </div>
+        <div id="listingsbutton">
+          <a href='createlisting.html'><h2>Create Listing</h2></a>
+        </div>
+        <div id='viewListing'>
+          <a href='viewlisting.html'><h2>View Listings</h2></a>
+        </div>
       </div>
-      <div id="listingsbutton">
-        <a href='createlisting.html'><h1>Create Listing</h1></a>
-      </div>
-      <div id='viewListing'>
-        <a href='viewlisting.html'><h1>View Listings</h1></a>
+      
+      <div class='signOut'>
+        <img src="images/howardlogo1.png" id="howardlogo1"/> <br>
+        <button class='button' id='signOutButton'>Sign Out</button>
       </div>
     </div>
+    
     <div class='main'>
-      <div id='displaypic1'>
-      <button id='displaypic'><img id='displaypic2' src="images/profileicon.png" /></button>
+      <div class='profileContent'>
+        <!--<img src="https://i.pinimg.com/originals/29/40/50/294050821a3d0229a6ccf18ba883b434.jpg"></img>-->
+        <div id='displaypic1'>
+          <button id='displaypic'><img id='displaypic2' src="images/profileicon.png" /></button>
+        </div>
+        <div id='form'>
+          <p>Name: <input type="text" id="name_input" /></p>
+          <p>Dorm: <input type="text" id='dorm_input' /></p>
+          <p>Description: <input type="text" id='descrip_input' /></p>
+          <p>Phone Number: <input id="phoneNumber_input" type='text' /></p>
+          <input type="submit" value="Save" id='submit'/>
+        </div>
       </div>
-      <div id='form'>
-      <form>
-        Name: <input type="text" id="name"/><br>
-        Dorm: <input type="text" id='dorm'></input><br>
-        Description: <input type="text" id='descrip'></input><br>
-        Phone Number: <input type='phoneNumber'></input><br>
-        <input type="submit" value="Save" id='save'/>
-      </form>
-      </div>
-      
-      
-      
     </div>
-  <!--scripts-->
-      <script src="firebase.js"></script>
-      <!--<script src="parallex.js"></script>-->
-      <script type="text/javascript" src="createprofile.js"></script>
-      <script type="text/javascript" src="firebase.js"></script>
+    <div id='copyright'>
+        <p><i></i>Copyright Phresh 2018</p>
+    </div>
+    <script type="text/javascript" src="firebase.js"></script>
+    <script type="text/javascript" src="createprofile.js"></script>
+
     <!--<script type="text/javascript" src="script.js"></script>-->
 </body>

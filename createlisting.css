@@ -1,10 +1,10 @@
 body {
+    margin:0;
     display:grid;
     grid-template-rows: 1fr 25px;
     grid-template-columns: 1fr 4fr;
     min-height: 100vh;
     min-width: 100vh;
-    margin:0;
 }
 a{
     color:black;
@@ -12,43 +12,67 @@ a{
 a:link{
     text-decoration: none;
 }
-#sideNav{
+#nav{
     background-color: #2E1114;
+	display:grid;
+	grid-row-start:1;
+	grid-row-end:2;
+	grid-column-start:1;
+	grid-column-end:3;
+	
+}
+#sideNav{
+    background-color:rgb(176,176,177);
 	display:grid;
 	grid-row-start:1;
 	grid-row-end:2;
 	grid-column-start:1;
 	grid-column-end:2;
 	grid-template-rows: 150px 1fr 75px;
-	overflow: hidden;
+	background-color: #2E1114;
 	/*border-right-style:inset;*/
 }
 #sideNav h2{
     color:white;
 }
+#home{
+    grid-row-start: 1;
+    grid-row-end:2;
+}
 #navigation{
     grid-row-start:2;
     grid-row-end:3;
 }
-.main{
-    grid-row-start:1;
-    grid-row-end:2;
-    grid-column-start:2;
-    grid-column-end:3;
-    
+#signOut{
     display:flex;
-    align-items:center;
+    grid-row-start:3;
+    grid-row-end:4;
+    color: white;
     justify-content:center;
-    flex-direction:column;
+}
+
+.main{
+    display:grid;
+    grid-template-rows: 1fr 25px;
+}
+#listingContent{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end:2;
+    /*margin-left:auto;*/
+    /*margin-right:auto;*/
 }
 #copyright{
+    display:grid;
     grid-row-start:2;
     grid-row-end:3;
-    grid-column-start:1;
-    grid-column-end:3;
     background-color:#212121;
-    color: white;
+    color:#fff;
 }
+
 #name{
     display:grid;
     grid-row-start:1;
@@ -79,9 +103,9 @@ a:link{
 }
 #viewlisting{
     display:flex;
-    justify-content:center;
     grid-row-start:4;
     grid-row-end:5;
+    justify-content:center;
     /*border-bottom-style: inset;*/
 }
 #viewlisting :hover{
@@ -90,6 +114,23 @@ a:link{
 #logo{
 	height: 100%;
 }
+
+input:focus{
+    border: 3px solid #2E1114;
+}
+button{
+    
+}
+#createListing {
+    height: 250px;
+    width: 250px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#createListing:hover {
+    background: #ccc;
+}
 .button{
     background:transparent;
     border: none;
@@ -97,24 +138,4 @@ a:link{
     cursor:pointer;
     overflow:hidden;
     font-size: 20px;
-}
-#signOut{
-    display:flex;
-    grid-row-start:3;
-    grid-row-end:4;
-    color: white;
-    justify-content:center;
-}
-#viewListingBox{
-    display:flex;
-}
-.listing_data{
-    flex:1;
-    border: solid black 1px;
-    border-radius:25px;
-    margin: 10px;
-    background-color: #777777;
-}
-.listing_data :hover{
-    background-color:#4f4f4f;
 }

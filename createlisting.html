@@ -1,29 +1,60 @@
 <html>
     <head>
-        <link rel="stylesheet" href="viewlisting.css" type="text/css" />
+        <!--FIREBASE-->
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDv2GYirztQDGBB_u0L2ScGBl6aTB8UyA4",
+    authDomain: "phresh-37a6b.firebaseapp.com",
+    databaseURL: "https://phresh-37a6b.firebaseio.com",
+    projectId: "phresh-37a6b",
+    storageBucket: "phresh-37a6b.appspot.com",
+    messagingSenderId: "134748980253"
+  };
+  firebase.initializeApp(config);
+</script>      
+        <link rel="stylesheet" href="createlisting.css" type="text/css" />
     </head>
     <body>
-        <div id='nav'>
-          <a href='index.html'><img id='logo' src="images/Phresh-2.png"></img></a>
-        </div>
         <div id='sideNav'>
-          <div id='name'>
-            <h1>Name</h1>
+          <div id='home'>
+              <a href='index.html'><img id='logo' src="images/Phresh-2.png"></img></a>
           </div>
-          <div id="profilebutton">
-            <a href='createprofile.html'><h1>Profile</h1></a>
+          <div id='navigation'>
+            <div id="profilebutton">
+              <a href='createprofile.html'><h2>Profile</h2></a>
+            </div>
+            <div id="listingsbutton">
+              <a href='createlisting.html'><h2>Create Listing</h2></a>
+            </div>
+            <div id='viewlisting'>
+              <a href='viewlisting.html'><h2>View Listings</h2></a>
+            </div>  
           </div>
-          <div id="listingsbutton">
-              <a href='viewlisting.html'><h1>Listings</h1></a>
+          <div id='signOut'>
+            <button class='button' id='signOutButton'>Sign Out</button>
           </div>
-          <!--<div></div>-->
         </div>
+        
         <div class='main'>
+          <div id='listingContent'>
+            <!--<button id='createListing'>Create Listing +</button>-->
+            <h1>Create A Listing!</h1>
+            <div>
+                Name: <input type="text" id="name_listing"/><br>
+                Dorm: <input type="text" id="dorm_listing"/><br>
+                Date & Time: <input type="datetime-local" id="dateTime_listing"/><br>
+                Description: <input type="text" id="description_listing"/><br>
+                <input type="submit" value="Submit" id='submit_listing'/>
+            </div>            
+          </div>
           
-          
-          
+          <div id='copyright'>
+            <p>Copyright Phresh 2018</p>
+          </div>
         </div>
-        <script type="text/javascript" src="createlisting.js"></script>
+        <script type="text/javascript" src="firebase.js"></script>
     </body>
 </html>    
     

@@ -148,3 +148,15 @@ a:hover{
   z-index: 1000000000;
   cursor: pointer;
 }
+.parallax{
+  background-image: url("https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/fc/3054691-poster-p-1-college-students-are-renting-their-dorm-rooms-on-airbnb-what-could-go-wrong.jpg");
+
+  /* Set a specific height */
+  height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
