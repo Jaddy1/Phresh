@@ -13,8 +13,20 @@
       messagingSenderId: "134748980253"
     };
     firebase.initializeApp(config);
-  </script>
-        <link rel="stylesheet" href="viewlisting.css" type="text/css" />
+      </script>
+      <link rel="stylesheet" href="viewlisting.css" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Gaegu');
+      html {
+        height: 100%;
+        overflow-y: hidden;
+      }
+      body {
+        height: 100%;
+      }
+    </style>
     </head>
     <body onload='presentListingsOnPage()'>
       <div id='sideNav'>
@@ -32,6 +44,10 @@
           <a href='viewlisting.html'><h2>View Listings</h2></a>
         </div>
       </div>
+      <div class="pictures">
+        <img src="images/howardlogo1.png" id="howardlogo1"/>
+    <!--    <img src="images/howardlogo2.png" id="howardlogo2"/>-->
+      </div>
       <div id='signOut'>
         <button class='button' id='signOutButton'>Sign Out</button>
       </div>
@@ -45,7 +61,7 @@
       </div>
         
       <div id='copyright'>
-        <p>Copyright Phresh 2018</p>
+        <p>&copy; Phresh 2018</p>
       </div>
       <script src="firebase.js"></script>
       <script type="text/javascript" src="viewlisting.js"></script>

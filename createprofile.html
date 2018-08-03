@@ -17,10 +17,18 @@
     <!--FONT-->
     <style>
         @import url('https://fonts.googleapis.com/css?family=Gaegu');
+      html {
+        height: 100%;
+        overflow-y: hidden;
+      }
+      body {
+        height: 100%;
+      }
     </style>
     <Title>Create Profile</Title>
     <link rel="stylesheet" href="createprofile.css" type="text/css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +37,6 @@
         <a href='index.html'><img id='logo' src="images/Phresh-2.png"></img></a>
       </div>
       <div id='navigation'>
-        <div id='name'>
-        </div>
         <div id="profilebutton">
           <a href='createprofile.html'><h2>Profile</h2></a>
         </div>
@@ -42,8 +48,11 @@
         </div>
       </div>
       
-      <div class='signOut'>
-        <img src="images/howardlogo1.png" id="howardlogo1"/> <br>
+      <div class="pictures">
+        <img src="images/howardlogo1.png" id="howardlogo1"/>
+    <!--    <img src="images/howardlogo2.png" id="howardlogo2"/>-->
+      </div>
+      <div id='signOut'>
         <button class='button' id='signOutButton'>Sign Out</button>
       </div>
     </div>
@@ -55,17 +64,23 @@
           <button id='displaypic'><img id='displaypic2' src="images/profileicon.png" /></button>
         </div>
         <div id='form'>
-          <p>Name: <input type="text" id="name_input" /></p>
-          <p>Dorm: <input type="text" id='dorm_input' /></p>
+          <div id="small_boxes">
+            <p>Name: <input type="text" id="name_input" class='input_boxes'/></p>
+            <p>Phone Number: <input id="phoneNumber_input" type='text'/></p>
+            <p>Dorm: <input type="text" id='dorm_input' class='input_boxes'/></p>
+          </div>
+          <div id="descrip_box">
           <p>Description: <input type="text" id='descrip_input' /></p>
-          <p>Phone Number: <input id="phoneNumber_input" type='text' /></p>
+          </div>
+          <div id="save_box">
           <input type="submit" value="Save" id='submit'/>
+          </div>
         </div>
       </div>
     </div>
-    <div id='copyright'>
-        <p><i></i>Copyright Phresh 2018</p>
-    </div>
+      <div id='copyright'>
+        <p>&copy; Phresh 2018</p>
+      </div>      
     <script type="text/javascript" src="firebase.js"></script>
     <script type="text/javascript" src="createprofile.js"></script>
 

@@ -88,10 +88,10 @@ a:hover{
   /*display:flex;*/
   position: absolute;
   top: 600px;
-  background: #2E1114;
+  background: #ffcd00;
   min-height: 850px;
   padding:75 0px;
-  color: #fff;
+  color: black;
   width:100%;
   /*justify-content:center;*/
 
@@ -111,9 +111,12 @@ a:hover{
     /*display:flex;*/
     margin-left:75px;
     margin-right:75px;
+    margin-top: -20px;
     /*justify-content:center;*/
     /*align-items:center;*/
     text-align: center;
+    font-family: 'Abel', sans-serif;
+
   }
   
 #listings,#profile { 
@@ -149,7 +152,7 @@ a:hover{
   cursor: pointer;
 }
 .parallax{
-  background-image: url("https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/fc/3054691-poster-p-1-college-students-are-renting-their-dorm-rooms-on-airbnb-what-could-go-wrong.jpg");
+  background-image: url("http://www.thegreenstation.us/upload/2018/07/06/grey-and-yellow-room-decor-affordable-full-size-of-and-white-yellow-and-white-room-decor-l-3b54292a7d1fd1f1.jpg");
 
   /* Set a specific height */
   height: 500px; 
@@ -159,4 +162,34 @@ a:hover{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#twitterlogo{
+  padding:5px;
+  width:75px;
+  height:75px;
+}
+
+#iglogo{
+  padding:5px;
+  width:75px;
+  height:75px;
+}
+
+#youtubelogo{
+  padding:5px;
+  width:75px;
+  height:75px; 
+}
+#socialmedia{
+  display:flex;
+  text-align:center;
+  justify-content:center;
+  align-items:center;
+}
+
+#socialmedia_logos{
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }

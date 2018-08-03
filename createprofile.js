@@ -1,5 +1,4 @@
-
-
+// let signOutButton = document.querySelector('#signOutButton')
 
 
 // signOutButton.addEventListener('click', e => {

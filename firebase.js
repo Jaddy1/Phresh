@@ -139,11 +139,11 @@ function presentListingsOnPage(listingInfo) {
     viewListingBox.innerHTML += 
     `
       <div class='listing_data'>
-        <p>Name:${listingInfo.name}<p>
-        <p>Dorm: ${listingInfo.dorm}<p>
-        <p>Date & Time: ${listingInfo.dateTime}<p>
-        <p>Description: ${listingInfo.descrip}<p>
-        <p>Email: ${listingInfo.email}<p>
+        <h3>Name:</h3><p>${listingInfo.name}<p>
+        <h3>Dorm: </h3><p>${listingInfo.dorm}<p>
+        <h3>Date & Time: </h3><p>${listingInfo.dateTime}<p>
+        <h3>Description: </h3><p>${listingInfo.descrip}<p>
+        <h3>Contact Me via Email: </h3><p>${listingInfo.email}<p>
       </div>
     `
   }
@@ -264,3 +264,8 @@ function submitListingData() {
       return err
     })
 }
+
+signOutButton.addEventListener('click', e => {
+	signOutWithGoogle()
+	window.location.href = 'index.html'
+})
